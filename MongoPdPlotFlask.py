@@ -18,8 +18,8 @@ col = db['avengers']
 
 df = pd.DataFrame(list(col.find()))
 print(df) """
-
-
+# ================================================================================
+# Plot results of file upload with Matplotlib
 
 """ app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = './file'
@@ -60,7 +60,7 @@ def aksesFile(path):
     return send_from_directory('file', path)
 if __name__ == '__main__':
     app.run(debug = True) """
-
+# ==================================================================================
 # Flask Upload file CSV to be plotted using plotly
 """ app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = './file'
