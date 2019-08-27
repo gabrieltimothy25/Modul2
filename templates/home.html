@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+</head>
+<body>
+    <h1>Formulir Pendaftaran</h1>
+    <form class = 'row' action='http://localhost:5000/form' method='POST'>
+        <div class="input-field col s4">
+            <input type='text' name='name' >
+            <label for='name'>Nama Anda</label>
+        </div>
+
+        <div class="input-field col s4">
+            <input id='age' type='text' name='age'/>
+            <label for='age'>Usia Anda</label>
+        </div>
+
+        <div class="input-field col s4">
+            <input id ='city' type='text' name='city'>
+            <label for='city'>Kota Anda</label>
+        </div>
+        <input class="btn btn-large waves-effect waves-light"style="color; red"
+        type='submit' value='Kirim'>
+    </form>
+
+    <!-- <video controls>
+        <source src ='http://localhost:5000/file/x.mp4' type='video/mp4'/>
+        </video> -->
+</body>         
+</html>

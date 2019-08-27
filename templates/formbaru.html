@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <style>
+        body{
+                background: url("https://images.pexels.com/photos/1308624/pexels-photo-1308624.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+        }
+    </style>
+</head>
+<body>
+    <br><br><br><br><br><br>
+    <center><h1 style="color:white;">User Login/Entry Page</h1></center>
+    <form class = 'row' action='http://localhost:1234/signup' method='POST'>
+        <div class='container'>
+            <div class='center'>
+                <div class="input-field col s6">
+                    <input type='text' name='email' style="color:aqua" >
+                    <label for='email'>Email Anda</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id ='password' type='text' name='password' style="color:aqua">
+                    <label for='city'>Password</label>
+                </div>
+                <input class="pink-lighten-2 btn btn-large waves-effect waves-light"
+                type='submit' value='Sign Up'>
+
+                <input class="pink-lighten-2 btn btn-large waves-effect waves-light"
+                type='submit' value='Log In' formaction='http://localhost:1234/login'>
+            </div>
+        </div>
+    </form>
+
+</body>         
+</html>
